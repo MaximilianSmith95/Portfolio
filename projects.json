@@ -1,0 +1,65 @@
+{
+    "writing": [
+        {
+            "title": "Autelligence Novel",
+            "image": "assets/article1.jpg",
+            "description": "This is a novel about A.I self-driving cars.",
+            "files": [
+                {"name": "Autelligence", "link": "assets/Autelligence_novel.pdf"}
+            ]
+        },
+        {
+            "title": "Kali Knox Script (TV Pilot)",
+            "image": "assets/article2.jpg",
+            "description": "A pilot script",
+            "files": [
+                {"name": "Kali Knox Pilot", "link": "assets/tv_script_Kali.pdf"}
+            ]
+        },
+        {
+            "title": "Farewell Island Novel",
+            "image": "assets/article2.jpg",
+            "description": "A thriller novel about a journalist who goes to farewell island",
+            "files": [
+                {"name": "Farewell island Short Novel", "link": "assets/Farewell_island.pdf"}
+            ]
+        },
+        {
+            "title": "Blockbuster Novel with Scripts",
+            "image": "assets/article2.jpg",
+            "description": "A novel about a cinema where the films come to life, equipped with film scripts for the relevant films",
+            "files": [
+                {"name": "Blockbuster Novel", "link": "assets/Blockbuster novel with scripts editing.pdf"}
+            ]
+        },
+        {
+            "title": "Kali Knox Script (TV Pilot)",
+            "image": "assets/article2.jpg",
+            "description": "A pilot script",
+            "files": [
+                {"name": "Kali Knox Pilot", "link": "assets/tv_script_Kali.pdf"}
+            ]
+        }
+        
+    ],
+    "projects": [
+        {
+            "title": "Project One",
+            "image": "assets/project1.jpg",
+            "description": "Description of project one.",
+            "files": [
+                {"name": "Source Code", "link": "assets/project1_source.zip"},
+                {"name": "Documentation", "link": "assets/project1_docs.pdf"}
+            ]
+        },
+        {
+            "title": "Project Two",
+            "image": "assets/project2.jpg",
+            "description": "Description of project two.",
+            "files": [
+                {"name": "Source Code", "link": "assets/project2_source.zip"},
+                {"name": "Presentation", "link": "assets/project2_presentation.pdf"}
+            ]
+        }
+    ]
+}
