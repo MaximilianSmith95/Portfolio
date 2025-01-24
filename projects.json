@@ -1,0 +1,131 @@
+{
+    "writing": [
+        {
+            "title": "Autelligence Novel",
+            
+            "description": "This is a novel about A.I self-driving cars.",
+            "files": [
+                {"name": "Autelligence", "link": "assets/Autelligence_novel.pdf"}
+            ]
+        },
+        {
+            "title": "Blossom XXX",
+            
+            "description": "Film script about teenage boy who has an online affair with a sex worker (bare in mind this was written in 2016, its actually quite relevant now).",
+            "files": [
+                {"name": "Blossom XXX", "link": "assets/Blossom XXX script.pdf"}
+            ]
+        },
+        {
+            "title": "Kali Knox Script (TV Pilot)",
+            
+            "description": "A pilot script",
+            "files": [
+                {"name": "Kali Knox Pilot", "link": "assets/tv_script_Kali.pdf"}
+            ]
+        },
+        {
+            "title": "Farewell Island Novel",
+            
+            "description": "A thriller novel about a journalist who goes to farewell island",
+            "files": [
+                {"name": "Farewell island Short Novel", "link": "assets/Farewell_island.pdf"}
+            ]
+        },
+        {
+            "title": "Blockbuster Novel with Scripts",
+            
+            "description": "A novel about a cinema where the films come to life, equipped with film scripts for the relevant films",
+            "files": [
+                {"name": "Blockbuster Novel", "link": "assets/Blockbuster novel with scripts editing.pdf"}
+            ]
+        },
+        {
+            "title": "Evolution of Gangsters Script",
+            
+            "description": "An admittedly terrible first ever script I wrote. Gangster film.",
+            "files": [
+                {"name": "Evolution of Gangsters", "link": "assets/evolution script.pdf"}
+            ]
+        },
+        {
+            "title": "Interlinking Fatalities Script",
+            
+            "description": "Sci-fi script about a man longing to reconnect with his dead wife by joining her in the next parrallel universe",
+            "files": [
+                {"name": "Interlinking Fatalities", "link": "assets/Interlinking fatalities script.pdf"}
+            ]
+        },
+        {
+            "title": "Funny Moments Script",
+            
+            "description": "The story of three differnet classes of families in London and how they all intertwine",
+            "files": [
+                {"name": "Funny Moments", "link": "assets/Funny Moments script.pdf"}
+            ]
+        },
+        {
+            "title": "Emre animation script",
+            
+            "description": "Animation script about a Panda who wants to escape the circus.",
+            "files": [
+                {"name": "Emre", "link": "assets/Emre script.pdf"}
+            ]
+        },
+        
+        {
+            "title": "Sports Blogs",
+            
+            "description": "Blogs about Football mainly",
+            "files": [
+                {"name": "Sports Blog website", "link": "Insert link"}
+            ]
+        },
+        {
+            "title": "Film Blog/reveiws",
+            
+            "description": "Blog/reviews about Film & TV",
+            "files": [
+                {"name": "Film & TV Blog website", "link": "Insert link"}
+            ]
+        }
+        
+    ],
+    "projects": [
+        {
+            "title": "Nerdgoo.com",
+            
+            "description": "An voting website for all things nerd that I coded.",
+            "files": [
+                {"name": "github", "link": "https://github.com/MaximilianSmith95"},
+                {"name": "Nerdgoo.com", "link": "https://www.nerdgoo.com"}
+            ]
+        },
+        {
+            "title": "Whatwon.com",
+            
+            "description": "An image comparison website that I coded. Has expired but the code is on my github.",
+            "files": [
+                {"name": "github", "link": "https://github.com/MaximilianSmith95"},
+                {"name": "Whatwon", "link": "No domain"}
+            ]
+        },
+        {
+            "title": "Dream is Dead Podcast",
+            
+            "description": "A podcast I created where I read out some of my earliest unfinished scripts. Unfortuntely they are more humourous than genius.",
+            "files": [
+                {"name": "Dream is Dead podcast on Spotify", "link": "https://open.spotify.com/show/63rBeuQeH7KQwSCYLxXQcJ"}
+            ]
+        },
+        {
+            "title": "Refugee in Liverpool",
+            
+            "description": "A short ten minute film set around a refugees first day in Liverpool, he is shown around by a typical scouse teenager who shows him how welcoming the city can be. ",
+            "files": [
+                {"name": "Refugee in Liverpool script", "link": "assets/Refugee in Liverpool.pdf"},
+                {"name": "Can provide the short film on request."}
+            ]
+        }
+    ]
+}
