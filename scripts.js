@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.className = 'writing';
                 div.innerHTML = `
                     <h3>${writing.title}</h3>
-                    <img src="${writing.image}" alt="${writing.title}">
+
                     <p>${writing.description}</p>
                     <div class="files">
                         <h4>Files:</h4>
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.className = 'project';
                 div.innerHTML = `
                     <h3>${project.title}</h3>
-                    <img src="${project.image}" alt="${project.title}">
+
                     <p>${project.description}</p>
                     <div class="files">
                         <h4>Files:</h4>
@@ -41,3 +41,39 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error fetching the projects data:', error));
 });
+document.getElementById('upload-button').addEventListener('click', () => {
+    const fileInput = document.getElementById('upload-file');
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert('Please select a file to upload.');
+        return;
+    }
+
+    const reader = new FileReader();
+
+    reader.onload = (event) => {
+        const fileContent = event.target.result;
+
+        // Display uploaded content (for text or HTML files)
+        const writingContainer = document.getElementById('writing-container');
+        const div = document.createElement('div');
+        div.className = 'uploaded-file';
+        div.innerHTML = `
+            <h3>${file.name}</h3>
+            <pre>${fileContent}</pre>
+        `;
+        writingContainer.appendChild(div);
+    };
+
+    // Handle different file types
+    if (file.type === 'application/pdf') {
+        reader.readAsArrayBuffer(file);
+        alert('PDF files cannot be displayed inline. Consider downloading.');
+    } else if (file.type.includes('text') || file.type.includes('wordprocessingml')) {
+        reader.readAsText(file);
+    } else {
+        alert('Unsupported file type. Please upload .pdf, .docx, or .txt files.');
+    }
+});
+
