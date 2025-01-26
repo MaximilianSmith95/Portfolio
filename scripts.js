@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Load writing and projects
     fetch('projects.json')
         .then(response => response.json())
         .then(data => {
@@ -10,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.className = 'writing';
                 div.innerHTML = `
                     <h3>${writing.title}</h3>
-
                     <p>${writing.description}</p>
                     <div class="files">
                         <h4>Files:</h4>
@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.className = 'project';
                 div.innerHTML = `
                     <h3>${project.title}</h3>
-
                     <p>${project.description}</p>
                     <div class="files">
                         <h4>Files:</h4>
@@ -39,41 +38,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectsContainer.appendChild(div);
             });
         })
-        .catch(error => console.error('Error fetching the projects data:', error));
-});
-document.getElementById('upload-button').addEventListener('click', () => {
-    const fileInput = document.getElementById('upload-file');
-    const file = fileInput.files[0];
+        .catch(error => console.error('Error fetching projects data:', error));
 
-    if (!file) {
-        alert('Please select a file to upload.');
-        return;
+    // Load blogs
+    const blogContainer = document.getElementById('blog-container');
+    if (blogContainer) {
+        fetch('./blogs.json') // Adjust path if needed
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to fetch blogs.json');
+                return response.json();
+            })
+            .then(data => {
+                const currentPath = window.location.pathname.toLowerCase();
+                let blogs = [];
+                if (currentPath.includes('football_blog')) {
+                    blogs = data.footballBlogs || [];
+                } else if (currentPath.includes('film_blog')) {
+                    blogs = data.filmBlogs || [];
+                }
+
+                if (blogs.length === 0) {
+                    blogContainer.innerHTML = '<p>No blogs available at the moment.</p>';
+                    return;
+                }
+
+                blogs.forEach(blog => {
+                    const div = document.createElement('div');
+                    div.className = 'blog-entry';
+                    div.innerHTML = `
+                        <h3>${blog.title}</h3>
+                        <p>${blog.description}</p>
+                        ${blog.files 
+                            ? blog.files.map(file => `<a href="${file.link}" target="_blank">${file.name}</a>`).join('<br>')
+                            : ''}
+                    `;
+                    blogContainer.appendChild(div);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching blogs data:', error);
+                blogContainer.innerHTML = `<p>Failed to load blog content. Please try again later. Error: ${error.message}</p>`;
+            });
     }
-
-    const reader = new FileReader();
-
-    reader.onload = (event) => {
-        const fileContent = event.target.result;
-
-        // Display uploaded content (for text or HTML files)
-        const writingContainer = document.getElementById('writing-container');
-        const div = document.createElement('div');
-        div.className = 'uploaded-file';
-        div.innerHTML = `
-            <h3>${file.name}</h3>
-            <pre>${fileContent}</pre>
-        `;
-        writingContainer.appendChild(div);
-    };
-
-    // Handle different file types
-    if (file.type === 'application/pdf') {
-        reader.readAsArrayBuffer(file);
-        alert('PDF files cannot be displayed inline. Consider downloading.');
-    } else if (file.type.includes('text') || file.type.includes('wordprocessingml')) {
-        reader.readAsText(file);
-    } else {
-        alert('Unsupported file type. Please upload .pdf, .docx, or .txt files.');
-    }
 });
-

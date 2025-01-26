@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_ANALYTICS_ID');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/football_logo.png" alt="Football Blog" class="profile-pic">
+        <h1>Football Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="film_blog.html">Film Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="blog">
+            <h2>Latest Football Blogs</h2>
+            <div id="blog-container"></div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:max.smith1@hotmail.co.uk">max.smith1@hotmail.co.uk</a></p>
+        </section>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

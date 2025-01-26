@@ -104,3 +104,29 @@ footer {
         max-width: 100px;
     }
 }
+.blog-entry {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-entry h3 {
+    margin: 0 0 0.5rem;
+}
+
+.blog-entry p {
+    margin: 0 0 1rem;
+    color: #555;
+}
+
+.blog-entry a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.blog-entry a:hover {
+    text-decoration: underline;
+}

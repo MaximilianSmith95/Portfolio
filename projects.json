@@ -75,20 +75,18 @@
         
         {
             "title": "Sports Blogs",
-            
             "description": "Blogs about Football mainly",
             "files": [
-                {"name": "Sports Blog website", "link": "Insert link"}
+                { "name": "Sports Blog website", "link": "football_blog.html" }
             ]
         },
         {
-            "title": "Film Blog/reveiws",
-            
+            "title": "Film Blog/reviews",
             "description": "Blog/reviews about Film & TV",
             "files": [
-                {"name": "Film & TV Blog website", "link": "Insert link"}
+                { "name": "Film & TV Blog website", "link": "film_blog.html" }
             ]
-        }
+        }        
         
     ],
     "projects": [
