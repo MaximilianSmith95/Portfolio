@@ -1,0 +1,37 @@
+{
+    "footballBlogs": [
+        {
+            "title": "Football Clubs if they were Film",
+            "description": "If football clubs could be recognised as famous films, which football club would be The Godfather, find out in this article.",
+            "files": [
+                {"name": "Football Clubs as films", "link": "assets/Football Clubs as Films.pdf"}
+            ]
+        },
+        {
+            "title": "Legendary footballers as famous actors",
+            "description": "How many Oscars would the greatest footballer of all time win? No, we're not talking about Sergio Ramos for his diving.",
+            "files": [
+                {"name": "Football Legends as Hollywood Icons", "link": "assets/Football Legends as Hollywood Icons.pdf"}
+            ]
+        },
+        {
+            "title": "Iconic football stadiums that are a match for the best filming locations",
+            "description": "Which football stadiums paint the best picture with their history and stature? Click and find out.",
+            "files": [
+                {"name": "Football Stadiums as Famous Filming Locations", "link": "assets/Football Stadiums as Famous Filming Locations.pdf"}
+            ]
+        }
+    ],
+    "filmBlogs": [
+        {
+            "title": "Top 10 Films of 2023",
+            "description": "Reviewing the best films of the year.",
+            "link": "assets/top_10_films_2023.pdf"
+        },
+        {
+            "title": "The Evolution of Sci-Fi Cinema",
+            "description": "Tracing the growth of sci-fi movies through the decades.",
+            "link": "assets/sci_fi_evolution.pdf"
+        }
+    ]
+}
