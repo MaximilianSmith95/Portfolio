@@ -24,14 +24,25 @@
     ],
     "filmBlogs": [
         {
-            "title": "Top 10 Films of 2023",
-            "description": "Reviewing the best films of the year.",
-            "link": "assets/top_10_films_2023.pdf"
+            "title": "How the success of the Harry Potter films affected the style of young adult novels in the 21st century?",
+            "description": "Delving into the affect harry Potter has had on recent cinema (2010s).",
+            "files": [
+                {"name": "Harry Potter films affected the style of young adult novels", "link": "assets/Dissertation film.pdf"}
+            ]
         },
         {
-            "title": "The Evolution of Sci-Fi Cinema",
-            "description": "Tracing the growth of sci-fi movies through the decades.",
-            "link": "assets/sci_fi_evolution.pdf"
+            "title": "John keats and his relationship with Shakespeare's sonnets",
+            "description": "A comparison between John keat's short lived and incredibly impactful writing career and his main influences, including Shakespeare. ",
+            "files": [
+                {"name": "John keats and his relationship with Shakespeare's sonnets", "link": "assets/Dissertation english.pdf"}
+            ]
+        },
+        {
+            "title": "Smile 2 is the best horror film of the year. ",
+            "description": "I demonstrate my love for this film making it well worth my cinema pass fee. ",
+            "files": [
+                {"name": "Smile 2! Wow!", "link": "assets/Smile 2.pdf"}
+            ]
         }
     ]
 }

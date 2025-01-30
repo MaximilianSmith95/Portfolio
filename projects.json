@@ -41,6 +41,24 @@
             ]
         },
         {
+            "title": "Three Scars of Our Planet part 1",
+            
+            "description": "A two part film regarding an outright war between robots and aliens on planet Earth, can we stay alive?",
+            "files": [
+                {"name": "Three Scars of our planet part 1", "link": "assets/The Three Scars of our Planet script.pdf"}
+                
+            ]
+        },
+        {
+            "title": "Three Scars of Our Planet Part 2",
+            
+            "description": "A two part film regarding an outright war between robots and aliens on planet Earth, can we stay alive?",
+            "files": [
+                {"name": "Three Scars of our planet part 2", "link": "assets/Three Scars 2 script.pdf"}
+                
+            ]
+        },
+        {
             "title": "Blockbuster Novel with Scripts",
             
             "description": "A novel about a cinema where the films come to life, equipped with film scripts for the relevant films",
